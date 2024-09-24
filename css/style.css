@@ -19,6 +19,14 @@ button {
     background-color: transparent;
 }
 
+/* .reviews__item.reviews__item--hide {
+    display: none;
+} */
+
+.open {
+    background-color: #000;
+}
+
 .title {
     text-align: center;
     margin-bottom: 60px;
@@ -179,15 +187,36 @@ body {
     font-weight: 400;
 }
 
+.reviews {
+    background-color: #f7f2ea;
+    padding: 60px 0;
+}
+
+.reviews__list {
+    display: flex;
+    gap: 0 26px;
+    justify-content: center;
+}
+
+.reviews__item {
+    flex-basis: 280px;
+}
+
+.reviews__text {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.reviews__name {
+    font-weight: 600;
+}
 
 
 
 
 
 @media (max-width: 1000px) {
-    .title {
-        margin-bottom: 30px;
-    }
     .user-actions__item-search {
         margin-left: 30px;
     }
@@ -212,6 +241,9 @@ body {
     }
     .assortment__list {
         gap: 0;
+    }
+    .reviews__item:last-child {
+        display: none;
     }
 }
 
@@ -291,6 +323,13 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .reviews__item:last-child {
+        display: block;
+    }
+    .reviews__list {
+        flex-wrap: wrap;
+        gap: 30px 76px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -327,11 +366,21 @@ body {
     .assortment {
         margin-bottom: 60px;
     }
+    .reviews__list {
+        gap: 30px 20px;
+    }
+    .reviews {
+        padding: 50px 0;
+    }
+    .reviews__item {
+        flex-basis: 212px;
+    }
 }
 
 @media (max-width: 360px) {
     .title {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+        font-size: 24px;
     }
     .logo {
         margin-right: 50px;
@@ -363,5 +412,12 @@ body {
     }
     .assortment__img {
         max-width: 170px;
+    }
+    .reviews__item{
+        flex-basis: 100%;
+    }
+    .reviews__item:last-child,
+    .reviews__item:first-child {
+        display: none;
     }
 }
