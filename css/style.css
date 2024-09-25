@@ -212,6 +212,39 @@ body {
     font-weight: 600;
 }
 
+.main-blog {
+    padding: 150px 0;
+}
+
+.main-blog__item-img {
+    width: 270px;
+}
+
+.main-blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 58px;
+}
+
+.main-blog__item {
+    flex-basis: 542px;
+    display: flex;
+    gap: 0 20px;
+}
+
+.main-blog__item-title {
+
+}
+
+.main-blog__item-author {
+
+}
+
+.main-blog__item-link {
+    
+}
+
+
 
 
 
