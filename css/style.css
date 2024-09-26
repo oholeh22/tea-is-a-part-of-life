@@ -151,7 +151,6 @@ body {
     font-size: 24px;
     margin-bottom: 48px;
     max-width: 560px;
-    line-height: normal;
 }
 
 .blockquote__text {
@@ -159,7 +158,6 @@ body {
     font-family: "Cormorant", serif;
     font-size: 40px;
     font-style: italic;
-    line-height: normal;
     max-width: 704px;
     margin: 150px auto;
 }
@@ -232,17 +230,152 @@ body {
     gap: 0 20px;
 }
 
-.main-blog__item-title {
+.main-blog__content {
+    display: flex;
+    flex-direction: column;
+}
 
+.main-blog__item-title {
+    font-family: "Cormorant", serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    min-height: 86px;
 }
 
 .main-blog__item-author {
-
+    font-size: 13px;
 }
 
 .main-blog__item-link {
-    
+    margin-top: auto;
+    font-size: 13px;
+    position: relative;
+} 
+
+.main-blog__item-link::after {
+    content: '';
+    background-image: url(../images/errow.svg);
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    margin-left: 8px;
+    bottom: 3px;
 }
+
+.main-blog__link {
+    padding: 12px 41px;
+    display: flex;
+    justify-content: center;
+    margin: 72px auto 0;
+    border: 1px solid #151618;
+    width: 152px;
+}
+
+.mailing-list {
+    padding: 100px 0;
+    background-color: #F7F2EA;
+    background-image: url(../images/mailing-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.mailing-list__title {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.mailing-list__inner {
+    display: flex;
+    gap: 60px 40px;
+}
+
+.mailing-list__text {
+    line-height: 1.5;
+    flex-basis: 580px;
+}
+
+.mailing-list__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 580px;
+}
+
+.mailing-list__email {
+    border: none;
+    border-bottom: 1px solid #b8b5b8;
+    background-color: transparent;
+    padding: 3px 15px;
+    width: 408px;
+    margin-right: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #151618;
+}
+
+.mailing-list__email::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #b8b5b8;
+}
+
+.mailing-list__btn {
+    background-color: #fff;
+    border: 1px solid #151618;
+    padding: 12px 41px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.checkbox__text {
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+.mailing-list__label {
+    margin-top: 16px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.checkbox-style {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #151618;
+    margin-top: 5px;
+}
+
+.checkbox:checked + .checkbox-style::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #151618;
+    top: 1px;
+    left: 1px;
+}
+
+
+
+
+
+
 
 
 
@@ -376,7 +509,6 @@ body {
     }
     .top__title {
         font-size: 40px;
-        line-height: normal;
     }
     .blockquote__text {
         font-size: 16px;
