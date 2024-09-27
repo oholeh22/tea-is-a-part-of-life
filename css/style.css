@@ -371,6 +371,48 @@ body {
     left: 1px;
 }
 
+.prioritise {
+    padding: 150px 0;
+}
+
+.prioritise__list {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 49px;
+}
+
+.prioritise__title {
+    font-style: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.prioritise__text {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.prioritise__item {
+    text-align: center;
+}
+
+.prioritise__item img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -411,7 +453,64 @@ body {
     .reviews__item:last-child {
         display: none;
     }
+    .main-blog {
+        padding: 120px 0;
+    }
+    .main-blog__item-img {
+        max-width: 230px;
+    }
+    .main-blog__item {
+        flex-basis: 460px;
+    }
+    .main-blog__list {
+        gap: 67px 20px;
+    }
+    .main-blog__link {
+        margin-top: 60px;
+    }
+    .mailing-list__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mailing-list__title {
+        text-align: center;
+    }
+    .mailing-list {
+        padding: 60px 0;
+    }
+    .mailing-list__text {
+        text-align: center;
+        flex-basis: 780px;
+    }
+    .prioritise {
+        padding: 120px 0;
+    }
+    .prioritise__list {
+        gap: 30px 210px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 860px) {
     .menu__list {
@@ -496,6 +595,24 @@ body {
         flex-wrap: wrap;
         gap: 30px 76px;
     }
+    .main-blog__item {
+        flex-basis: 542px;
+    }
+    .main-blog__item-img {
+        max-width: 270px;
+    }
+    .main-blog__list {
+        gap: 30px 20px;
+    }
+    .main-blog__item:nth-child(even) {
+        margin-left: 98px;
+    }
+    .mailing-list__text {
+        flex-basis: 640px;
+    }
+    .prioritise__list {
+        gap: 30px 133px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -515,6 +632,9 @@ body {
         max-width: 376px;
         margin-top: 60px;
         margin-bottom: 60px;
+    }
+    .main-blog__item:nth-child(even) {
+        margin-left: 0;
     }
 }
 
@@ -539,6 +659,12 @@ body {
     }
     .reviews__item {
         flex-basis: 212px;
+    }
+    .main-blog {
+        padding: 60px 0;
+    }
+    .main-blog__item-img {
+        min-width: 230px;
     }
 }
 
