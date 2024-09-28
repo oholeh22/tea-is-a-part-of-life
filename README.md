@@ -1,1 +1,5 @@
-# tea-is-a-part-of-life
+Page about tea
+
+html+css+js
+
+Adaptive pc, tablet, phone
