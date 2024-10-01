@@ -135,32 +135,38 @@
       <section class="assortment">
         <div class="container">
           <h2 class="title assortment__title">Explore our Collections</h2>
-
+      
           <ul class="assortment__list">
-            <!-- li.assortment__item*5>img.assortment__img[src=images/black.png]+p.assortment__name{Black} -->
             <li class="assortment__item">
-              <img src="images/black.png" alt="" class="assortment__img" />
+              <img src="images/black.png" alt="Black tea" class="assortment__img" onclick="openModal('./images/black-large.png')" />
               <p class="assortment__name">Black</p>
             </li>
             <li class="assortment__item">
-              <img src="images/green.png" alt="" class="assortment__img" />
+              <img src="images/green.png" alt="Green tea" class="assortment__img" onclick="openModal('images/green-large.png')" />
               <p class="assortment__name">Green</p>
             </li>
             <li class="assortment__item">
-              <img src="images/white.png" alt="" class="assortment__img" />
+              <img src="images/white.png" alt="White tea" class="assortment__img" onclick="openModal('images/white-large.png')" />
               <p class="assortment__name">White</p>
             </li>
             <li class="assortment__item">
-              <img src="images/oolong.png" alt="" class="assortment__img" />
+              <img src="images/oolong.png" alt="Oolong tea" class="assortment__img" onclick="openModal('images/oolong-large.png')" />
               <p class="assortment__name">Oolong</p>
             </li>
             <li class="assortment__item">
-              <img src="images/pu-erh.png" alt="" class="assortment__img" />
+              <img src="images/pu-erh.png" alt="Pu-erh tea" class="assortment__img" onclick="openModal('images/pu-erh-large.png')" />
               <p class="assortment__name">Pu-erh</p>
             </li>
           </ul>
         </div>
       </section>
+      
+      <!-- Модальное окно -->
+      <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+      </div>
+
       <section class="reviews">
         <div class="container">
           <h2 class="title">What our Clients say</h2>
