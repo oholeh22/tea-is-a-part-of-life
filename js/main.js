@@ -49,3 +49,23 @@ function closeModal() {
     console.log('Модальное окно или изображение не найдены.');
   }
 }
+
+
+const themeToggle = document.getElementById('themeToggle');
+
+// Проверяем, есть ли тема в localStorage при загрузке страницы
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('neutral-theme');
+  themeToggle.checked = true; // Переключаем тумблер на "включено"
+}
+
+// Добавляем событие на изменение состояния чекбокса
+themeToggle.addEventListener('change', () => {
+  if (themeToggle.checked) {
+    document.body.classList.add('neutral-theme');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.body.classList.remove('neutral-theme');
+    localStorage.setItem('theme', 'light');
+  }
+});

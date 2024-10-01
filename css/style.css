@@ -577,6 +577,94 @@ body {
   } 
 
 
+/* Основная светлая тема */
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Нейтральная тема */
+  body.neutral-theme {
+    background-color: #1c1b1b; /* Светло-серый */
+    color: #2c2c2c; /* Темно-серый текст */
+  }
+  
+  /* Заголовки и параграфы */
+  body.neutral-theme h1, 
+  body.neutral-theme h2, 
+  body.neutral-theme h3, 
+  body.neutral-theme h4,
+  body.neutral-theme h5,
+  body.neutral-theme p,
+  body.neutral-theme a,
+  body.neutral-theme li,
+  body.neutral-theme cite,
+  body.neutral-theme img
+ {
+    color: #ea086a;
+  }
+  
+  /* Пример для кнопок */
+  body.neutral-theme button {
+    background-color: #dcdcdc;
+    color: #2c2c2c;
+  }
+
+
+  /* Контейнер для переключателя */
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Скрытый чекбокс */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Стиль слайдера (внешний вид тумблера) */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  /* Круглый тумблер внутри переключателя */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  /* Когда переключатель включен */
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  /* Перемещение круглого тумблера при включении */
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  
+  
+
+
 
 
 
