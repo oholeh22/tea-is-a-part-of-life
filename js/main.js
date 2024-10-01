@@ -4,9 +4,6 @@ const menuList = document.querySelector('.menu__list');
 const menuShadow = document.querySelector('.menu--close');
 
 
-
-
-// Проверяем наличие элементов перед использованием
 if (menuBtn && menuList && menuShadow && menuClose) {
   menuBtn.addEventListener('click', () => {
     menuList.classList.toggle('menu__list--open');
@@ -25,18 +22,18 @@ document.querySelectorAll('.assortment__img').forEach(img => {
     });
   });
 
-// Функции для открытия и закрытия модального окна
+
 function openModal(src) {
-    console.log('Opening modal with image:', src); // Логируем путь к изображению
+    console.log('Opening modal with image:', src); 
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modalImg');
   
     if (modal && modalImg) {
-      modal.classList.add('modal--open'); // Открываем модальное окно
-      modalImg.src = src; // Устанавливаем источник для модального изображения
-      console.log('Modal opened with image:', modalImg.src); // Логируем, какой источник был установлен
+      modal.classList.add('modal--open'); 
+      modalImg.src = src; 
+      console.log('Modal opened with image:', modalImg.src); 
     } else {
-      console.error('Modal or modal image element not found'); // Логируем ошибку, если элементы не найдены
+      console.error('Modal or modal image element not found'); 
     }
   }
 
@@ -53,13 +50,12 @@ function closeModal() {
 
 const themeToggle = document.getElementById('themeToggle');
 
-// Проверяем, есть ли тема в localStorage при загрузке страницы
+
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('neutral-theme');
-  themeToggle.checked = true; // Переключаем тумблер на "включено"
+  themeToggle.checked = true; 
 }
 
-// Добавляем событие на изменение состояния чекбокса
 themeToggle.addEventListener('change', () => {
   if (themeToggle.checked) {
     document.body.classList.add('neutral-theme');
